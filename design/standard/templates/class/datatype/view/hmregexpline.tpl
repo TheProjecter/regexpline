@@ -3,38 +3,21 @@
 
 <div class="block">
     <div class="element">
+        <label>{'Regular expression'|i18n( 'extension/regexpline/design/standard/class/datatype/view' )}:</label>
         {if count($content.preset)|gt(0)}
-            <table class="list">
-            <tr>
-                <th>{'Identifier'|i18n( 'extension/regexpline/design/standard/class/datatype/view' )}</th>
-                <th>{'Regular expression'|i18n( 'extension/regexpline/design/standard/class/datatype/view' )}</th>
-                <th>{'Negated'|i18n( 'extension/regexpline/design/standard/class/datatype/view' )}</th>
-            </tr>
+            <ul>
                 {foreach $content.preset as $preset}
-                <tr>
-                    <td>{$preset|wash}</td>
-                    <td>{$presets[$preset]|wash}</td>
-                    <td>{cond( first_set( $content.negates[$preset|wash], 0 ), 'Yes', 'No' )}</td>
-                </tr>
+                    <li>{$presets[$preset]|wash}</li>
                 {/foreach}
-            </table>
+            </ul>
         {else}
-            <table class="list">
-            <tr>
-                <th>{'Regular expression'|i18n( 'extension/regexpline/design/standard/class/datatype/view' )}</th>
-                <th>{'Error message'|i18n( 'extension/regexpline/design/standard/class/datatype/view' )}</th>
-                <th>{'Negated'|i18n( 'extension/regexpline/design/standard/class/datatype/view' )}</th>
-            </tr>
-                {foreach $content.regexp as $index => $regexp}
-                <tr>
-                    <td>{$regexp|wash}</td>
-                    <td>{first_set( $content.error_messages[$index]|wash, '&nbsp;' )}</td>
-                    <td>{cond( first_set( $content.negates[$index], 0 ), 'Yes', 'No' )}</td>
-                </tr>
+            <ul>
+                {foreach $content.regexp as $regexp}
+                <li>{$regexp|wash}</li>
                 {/foreach}
-            </table>
+            </ul>
         {/if}
-    </div>
+    </div>    
 </div>
 
 <div class="block">
@@ -42,15 +25,15 @@
         <label>{'Help text'|i18n( 'extension/regexpline/design/standard/class/datatype/view' )}:</label>
         <p>{$content.help_text|wash|nl2br}</p>
     </div>
-
+    
     <div class="element">
         <label>{'Object name pattern'|i18n( 'extension/regexpline/design/standard/class/datatype/view' )}:</label>
         {if $content.naming_pattern|ne('')}
             <p>{$content.naming_pattern|wash}</p>
         {else}
-            <p>{'No pattern supplied. Using the complete expression.'|i18n( 'extension/regexpline/design/standard/class/datatype/view' )}</p>
+            <p>{'No pattern supplied. Using the complete expression.'|i18n( 'extension/regexpline/design/standard/class/datatype/view' )}</p> 
         {/if}
-    </div>
+    </div>    
 </div>
 
 <div class="block">
@@ -64,7 +47,7 @@
         {'Single text line'|i18n( 'extension/regexpline/design/standard/class/datatype/edit' )}
     {/case}
     {/switch}
-    </p>
+    </p> 
 </div>
 
 {undef $content $presets}

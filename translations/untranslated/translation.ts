@@ -7,19 +7,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>This is a required field which means you can&apos;t leave it empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Your input did not meet the requirements.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>This is a required field.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>You need at least one regular expression or selected preset</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>The regular expression &quot;%1&quot; is invalid</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -85,18 +77,6 @@
         <source>Text area (Text block)</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>Regexp / Preset</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Negate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>The following errors occured:</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>extension/regexpline/design/standard/class/datatype/view</name>
@@ -118,18 +98,6 @@
     </message>
     <message>
         <source>Display type</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Identifier</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Negated</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Error message</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

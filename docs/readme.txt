@@ -1,5 +1,5 @@
-Datatype extension for eZ publish 4.x (License: GPL)
-----------------------------------------------------
+Datatype extension for eZ publish 3.6+ (License: GPL)
+-----------------------------------------------------
 
 Provides a regular expression datatype for eZ publish.
 
@@ -32,12 +32,8 @@ If no indication is present, version 1.0 contains the feature.
 - Ability to display the datatype as a single text line or as a textarea (object edit) [2.0]
 - Ability to negate regular expressions and presets [2.1]
 - Support for has_content in templates [2.1]
-- Stripping of tags with possibility to disable the stripping via the ini file [2.2]
-- Control the size of both a text line and a text area in content/edit [2.2]
-- Error messages in case class validation fails [2.3]
 - Contentclass import & export
 - i18n support
-- PHP5 support for eZ Publish 4.x [3.0]
 
 
 Information
@@ -75,7 +71,7 @@ No planned features at the time of writing
 
 Requirements
 ------------
-- A suitable eZ publish version: 4.0.
+- A suitable eZ publish version: 3.6.x; 3.7.x has also been used during development.
 - Knowledge of Perl Compatible Regular Expression syntax (http://www.php.net/manual/en/ref.pcre.php)
 
 
@@ -118,12 +114,13 @@ Tips & Tricks
 Copyright
 ---------
 
-Regular Expression datatype for eZ publish 4.x
-Copyright (C) 2005-2008  Hans Melis
+Regular Expression datatype for eZ publish 3.6+
+Copyright (C) 2005-2006  Hans Melis
 
 This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License version 2 as
-published by the Free Software Foundation.
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
